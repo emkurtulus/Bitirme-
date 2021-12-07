@@ -1,0 +1,7 @@
+liste = [[1,2],[3,4],[5,6,7]]
+def ters_liste(liste):
+    liste.sort(reverse = True)
+    for x in liste:
+        x.sort(reverse = True)
+        return liste
+print(ters_liste(liste))
