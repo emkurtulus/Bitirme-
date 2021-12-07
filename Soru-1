@@ -1,0 +1,12 @@
+aList = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+
+def flatten(X):
+ newList = []
+ for item in X:
+    if type(item) != type([]):
+        newList.append(item)
+    else:
+        newList.extend(flatten(item))
+ return newList
+flatten(aList)
+            
